@@ -39,7 +39,9 @@ def nyc_pigeon_organizer(data)
     end 
   end 
   return_hash.each do |name, attributes|
+    
     data.each do |attribute, value|
+      binding.pry
       value.each do |key, name_array|
         name_array.each do |pigeon_name|
           if (pigeon_name == name)
